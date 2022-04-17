@@ -31,6 +31,11 @@ body {
   color: var(--font-color);
   font-family: var(--font-primary);
 }
+.top-bar {
+  display: flex;
+  gap: 16px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -67,7 +72,8 @@ header .container {
 .menu {
   display: flex;
   gap: 2rem;
-  align-items: center;
+  align-items: flex-end;
+  flex-grow: 1;
 }
 
 /* NOT CONNECTED */
