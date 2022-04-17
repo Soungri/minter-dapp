@@ -317,6 +317,15 @@ section {
 /* SLIDDER */
 
 .splide {
+  Position: fixed;
+  left: 5%;
+  top: 12%;
+
+  height: 600px;
+  width: 20%;
+  max-width: 250px;
+  min-width:120px;
+
   /* position: absolute; */
   top: 90px;
   left: 5rem;
