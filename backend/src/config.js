@@ -9,7 +9,7 @@ const network = NETWORK.eth;
 // General metadata for Ethereum
 const namePrefix = "Plumpoala";
 const description = "An NFT collection of fat koalas";
-const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
+const baseUri ="ipfs://bafybeifc5ekqdqzd64vylzhsgxwb2crtx2rbpypgf5jvtfcqieeusj3jsq/"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
@@ -72,7 +72,7 @@ const PUBLIC_MINT_START_DATE = "2022-04-14T11:30:48+00:00"; // This is required.
 const PRESALE_MINT_START_DATE = "2022-04-14T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x2cC33B5d6600489EB96186B3b3f9e7b4777a3DaA"; // Address that will receive the royalty
-const BASE_URI = null ; // only update if you want to manually set the base uri
+const BASE_URI = "ipfs://bafybeifc5ekqdqzd64vylzhsgxwb2crtx2rbpypgf5jvtfcqieeusj3jsq/" ; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
