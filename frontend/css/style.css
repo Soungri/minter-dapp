@@ -24,19 +24,26 @@
 }
 
 body {
+
   background-color: var(--bg-color);
   /* display: flex; */
-  flex-flow: column;
   height: 100vh;
   color: var(--font-color);
   font-family: var(--font-primary);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 56px;
+  margin-left: 200px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   max-width: 960px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 1rem 2rem;
   justify-content: center;
   overflow: hidden;
@@ -317,14 +324,14 @@ section {
 /* SLIDDER */
 
 .splide {
-  Position: fixed;
+  /* position: fixed;
   left: 5%;
   top: 12%;
 
   height: 600px;
   width: 20%;
   max-width: 250px;
-  min-width:120px;
+  min-width:120px; */
 
   /* position: absolute; */
   top: 90px;
