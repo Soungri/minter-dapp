@@ -58,7 +58,7 @@ const CHAIN = 'rinkeby'; // only rinkeby or polygon
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'PLUMPOALA';
 const CONTRACT_SYMBOL = 'PLUMP';
-const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
+const METADATA_UPDATABLE = false; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x809dfd2d1A3C5116A7B242305B5C5Ab7A8A4579D';
 const TREASURY_ADDRESS = '0xE6cdEf22b66c95b990D6a6241fda7b0774DE4FE6';
 const MAX_SUPPLY = 2000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
