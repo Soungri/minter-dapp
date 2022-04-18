@@ -53,28 +53,30 @@ const extraMetadata = {
 //  REQUIRED 
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'rinkeby'; // only rinkeby or polygon
+const CHAIN = 'polygon'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'PLUMPOALA';
 const CONTRACT_SYMBOL = 'PLUMP';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
-const OWNER_ADDRESS = '0x809dfd2d1A3C5116A7B242305B5C5Ab7A8A4579D';
-const TREASURY_ADDRESS = '0xE6cdEf22b66c95b990D6a6241fda7b0774DE4FE6';
+const OWNER_ADDRESS = '0x2cC33B5d6600489EB96186B3b3f9e7b4777a3DaA';
+const TREASURY_ADDRESS = '0xCb3Bd7f40A85C3F88dE07cFE8A1aE90aFd0e6FC1';
 const MAX_SUPPLY = 2000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 0.01; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MINT_PRICE = 40; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-04-14T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-04-18T19:00:00+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = "2022-04-14T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
-const ROYALTY_ADDRESS = "0x2cC33B5d6600489EB96186B3b3f9e7b4777a3DaA"; // Address that will receive the royalty
-const BASE_URI = "ipfs://bafybeifc5ekqdqzd64vylzhsgxwb2crtx2rbpypgf5jvtfcqieeusj3jsq/" ; // only update if you want to manually set the base uri
+
+const ROYALTY_ADDRESS = "0xCb3Bd7f40A85C3F88dE07cFE8A1aE90aFd0e6FC1"; // Address that will receive the royalty
+const BASE_URI = null; // only update if you want to manually set the base uri
+
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = ["0xd3D34BF581E1631bcbcD8d74a0Eb66B45578378C"]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = ""; // If you want to manually include it
@@ -82,8 +84,8 @@ let CONTRACT_ADDRESS = ""; // If you want to manually include it
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
-const GENERIC_DESCRIPTION = "REPLACE THIS"; // Replace with what you want the generic descriptions to say.
-const GENERIC_IMAGE = "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh"; // Replace with your generic image that will display for all NFTs pre-reveal.
+const GENERIC_DESCRIPTION = "Plump"; // Replace with what you want the generic descriptions to say.
+const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafybeiglc3pydxwveicszxc2xxryvthpt3h6cqjbwomggk34jikijyb5gi"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
