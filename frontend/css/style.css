@@ -12,7 +12,7 @@
   --bg-color-transparent: #cdcdcd;
   --font-color: #000000;
   --btn-bg-color: #5fa5e6;
-  --accent-color: #5469d3;
+  --accent-color: rgb(54, 74, 77);
   --header-shadow: var(--accent-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
 }
@@ -25,7 +25,11 @@
 
 body {
 
-  background-color: var(--bg-color);
+  /*background colors for the site/*
+  /* background-color: var(--bg-color); */
+  background-color: rgb(155, 172, 182);
+
+
   /* display: flex; */
   height: 100vh;
   color: var(--font-color);
@@ -36,6 +40,7 @@ body {
   gap: 16px;
   align-items: center;
   padding: 16px;
+  background-color: rgb(155, 172, 182);
 }
 
 main {
@@ -57,6 +62,16 @@ main {
   padding: 1rem 2rem;
   justify-content: center;
   overflow: hidden;
+}
+
+.new_container {
+  color: rgb(15, 24, 23);
+  font-size: large;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.8em;
+}
+.new_container p+p {
+  margin-top: 1em;
 }
 
 /* HEADER */
@@ -147,6 +162,8 @@ header .container {
   border-radius: 5rem;
   margin-left: 2rem;
   border-color: transparent;
+  background-color: rgb(54, 74, 77);
+  color: white;
 }
 
 .hero-btn {
