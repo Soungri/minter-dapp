@@ -354,6 +354,7 @@ async function mint() {
         .send(
           {
               from:account, 
+value: value.toString(),
               gasLimit: web3.utils.toHex(1000000), // Raise the gas limit to a much higher amount
               gasPrice: web3.utils.toHex(web3.utils.toWei('30', 'gwei'))
           })
