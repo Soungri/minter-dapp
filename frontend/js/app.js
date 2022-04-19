@@ -350,7 +350,13 @@ async function mint() {
       const merkleJson = await merkleData.json();
       const presaleMintTransaction = await contract.methods
         .presaleMint(amount, merkleJson)
-        .send({ from: window.address, value: value.toString() });
+        //.send({ from: window.address, value: value.toString() });
+        .send(
+          {
+              from:account, 
+              gasLimit: web3.utils.toHex(1000000), // Raise the gas limit to a much higher amount
+              gasPrice: web3.utils.toHex(web3.utils.toWei('30', 'gwei'))
+          })
       if(presaleMintTransaction) {
         if(chain === 'rinkeby') {
           const url = `https://rinkeby.etherscan.io/tx/${presaleMintTransaction.transactionHash}`;
