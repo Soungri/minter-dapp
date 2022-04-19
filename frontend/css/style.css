@@ -43,6 +43,8 @@ body {
   background-color: rgb(155, 172, 182);
 }
 
+#logo {
+}
 main {
   display: flex;
   flex-direction: column;
@@ -145,11 +147,15 @@ header .container {
   text-align: center;
   text-transform: capitalize;
   transition: all 0.3s ease;
-  box-shadow: var(--header-shadow);
   cursor: pointer;
   position: relative;
   text-decoration: none;
   outline: none;
+  /* Aryo changes*/
+  /* You'll want to change border none to some other border value that adds lines around the button. Googling "border css" should suffice*/
+  /* box-shadow: var(--header-shadow); */
+  /*You'll want to add id's to "mint your NFT" to add shadow back to that button only*/
+  border: none;
 }
 .btn:hover {
   box-shadow: none;
