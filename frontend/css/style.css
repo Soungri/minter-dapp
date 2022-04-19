@@ -155,7 +155,7 @@ header .container {
   /* You'll want to change border none to some other border value that adds lines around the button. Googling "border css" should suffice*/
   /* box-shadow: var(--header-shadow); */
   /*You'll want to add id's to "mint your NFT" to add shadow back to that button only*/
-  border: none;
+  border: 1px;
 }
 .btn:hover {
   box-shadow: none;
