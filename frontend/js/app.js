@@ -315,12 +315,12 @@ async function mint() {
         .mint(amount)
         .send(
           {
-              from:account, 
-value: value.toString(),
+              from:window.address, value: value.toString(),
               gasLimit: web3.utils.toHex(1000000), // Raise the gas limit to a much higher amount
               gasPrice: web3.utils.toHex(web3.utils.toWei('30', 'gwei'))
           })
         //.send({ from: window.address, value: value.toString() });
+        
       if(mintTransaction) {
         if(chain === 'rinkeby') {
           const url = `https://rinkeby.etherscan.io/tx/${mintTransaction.transactionHash}`;
